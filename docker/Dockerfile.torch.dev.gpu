@@ -4,7 +4,7 @@ FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
 # specify vscode as the user name in the docker
 # This user name should match that of the VS Code .devcontainer to allow seamless development inside the docker container via vscode 
 ARG USERNAME=vscode
-ARG USER_UID=1001
+ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Create a non-root user
